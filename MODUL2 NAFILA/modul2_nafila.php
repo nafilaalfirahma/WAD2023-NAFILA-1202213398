@@ -88,7 +88,7 @@ if ($pesan==""){
                     <!--  **********************  5  **************************     -->
                     <!-- Hasil pesan error nya taruh di sini yaaa!! 😊  -->
                     <!-- silakan taruh code kalian di bawah -->
-                     <p style='color:red;'> !tinggi badan atau berat badan tidak boleh kosong! </p>
+                     <p style='color:red;'> <?=$pesan?> </p>
                     <!--  **********************  5  **************************     -->
 
 
