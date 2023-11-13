@@ -13,19 +13,17 @@ $berat_badan = isset($_POST['berat_badan'])? $_POST['berat_badan']:null;
 // tinggi_badan atau $berat_badan tidak boleh kosong nilainya, kalau kosong buatkanlah pesan error
 // silakan taruh code kalian di bawah
 $pesan="";
+$final="";
 if ($tinggi_badan == null||$berat_badan==null){
     $pesan = "!tinggi badan atau berat badan tidak boleh kosong!";
 }
-
 // **********************  2  ************************** 
-
-
 // **********************  3  ************************** 
 // ========== buatkanlah perkondisian di mana Jika kesalahan Error-nya "empty", 
 // masukkan perhitungan BMI sesuai dengan rumus yang tertera pada jurnal
 // silakan taruh code kalian di bawah
-$final="";
-if ($pesan==""){
+
+elseif($pesan==""){
     $tinggibadan_cm = $tinggi_badan/100;
     $hasil_bmi = $berat_badan/($tinggibadan_cm*$tinggibadan_cm);
     if ($hasil_bmi <=18.4){
@@ -88,7 +86,7 @@ if ($pesan==""){
                     <!--  **********************  5  **************************     -->
                     <!-- Hasil pesan error nya taruh di sini yaaa!! 😊  -->
                     <!-- silakan taruh code kalian di bawah -->
-                     <p style='color:red;'> !tinggi badan atau berat badan tidak boleh kosong! </p>
+                     <p style='color:red;'> <?=$pesan?> </p>
                     <!--  **********************  5  **************************     -->
 
 
