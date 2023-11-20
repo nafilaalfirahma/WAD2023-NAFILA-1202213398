@@ -1,3 +1,15 @@
+<?php 
+            include("navbar.php");
+            include("connect.php"); 
+            $id = $_GET['id'];
+                // Buatlah query untuk mengambil masing-masing data berdasarkan id dari database (gunakan fungsi GET dan mysqli_fetch_assoc() 
+                // serta query SELECT dan WHERE)
+                
+
+
+
+                //
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -6,18 +18,6 @@
         <title>Detail Mobil</title>
     </head>
     <body>
-        <?php 
-            include("navbar.php");
-            include("connect.php"); 
-            $id = $_GET['id'];
-            // Buatlah query untuk mengambil masing-masing data berdasarkan id dari database (gunakan fungsi GET dan mysqli_fetch_assoc() 
-            // serta query SELECT dan WHERE)
-            
-
-
-
-            //
-        ?>
         <div class="row">
             <center>
                 <h1>Perbarui Detail Mobil</h1>

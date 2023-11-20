@@ -39,7 +39,7 @@
                 <th scope="col">Warna</th>
                 <th scope="col">Tipe</th>
                 <th scope="col">Harga</th>
-                <th scope="col">Harga </th>
+                <th scope="col">Detail </th>
                 </tr>
             </thead>
             <tbody>
